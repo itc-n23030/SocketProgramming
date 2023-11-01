@@ -18,7 +18,7 @@ def rec(sock,c_len=1024):
 
 def main():
     c_socket=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-    c_socket.connect(("192.168.1.2",80))
+    c_socket.connect(("127.1.1.1",80))
     r_text="GET / HTTP/1.1\r\n\r\n"
     r_bytes=r_text.encode("ASCII")
     sen(c_socket,r_bytes)
