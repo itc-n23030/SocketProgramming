@@ -29,6 +29,6 @@ def main(ip,port):
 
 
 if __name__=="__main__":
-    ip,port=input().split(":")
+    ip,port=str(input()),int(input())
     main()
 
